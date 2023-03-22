@@ -1,0 +1,58 @@
+GET http://localhost:3000/books/
+
+
+### get 
+Get http://localhost:3000/books/23/
+
+
+### add
+
+Post http://localhost:3000/books/ 
+Content-Type: application/json
+
+{
+"title"  : "Ram",
+"authorId" : 43,
+"rating"  : 5,
+"ratingCount" : 6,
+"reviewCount" : 6,
+"description" : "dahfoahfoahf",
+"pages" : 409,
+"dateOfPublication" : "November",
+"editionLanguage" : "Tamil",
+"price" : "600",
+"onlineStores" : "Amazon"
+}
+
+
+### update 
+
+PUT http://localhost:3000/books/23/
+Content-Type: application/json 
+
+{
+"title"  : "Harry Potter and the Sorceres Stone",
+"authorId" : 1,
+"rating"  : 5,
+"ratingCount" : 6,
+"reviewCount" : 6,
+"description" : "dahfoahfoahf",
+"pages" : 510,
+"dateOfPublication" : "November",
+"editionLanguage" : "Tamil",
+"price" : 600,
+"onlineStores" : "Amazon"
+}
+
+
+### delete 
+
+DELETE http://localhost:3000/books/1/
+
+
+
+
+
+#### author 
+
+GET http://localhost:3000/authors/1/books/ 
